@@ -14,7 +14,7 @@ const images = [
 ];
 
 const makeGalleryElementMarkup = ({ url, alt }) => {
-  return `<li><img src=${url} alt=${alt}> </img></li>`;
+  return `<li><img src=${url} alt=${alt} width = "100%"> </img></li>`;
 };
 
 const makeGalleryMarkup = images.map(makeGalleryElementMarkup).join(" ");
@@ -22,4 +22,3 @@ const makeGalleryMarkup = images.map(makeGalleryElementMarkup).join(" ");
 const galleryListRef = document.querySelector(".gallery");
 
 galleryListRef.insertAdjacentHTML("beforeend", makeGalleryMarkup);
-console.log("🚀 ~ file: task-03.js ~ line 25 ~ galleryListRef", galleryListRef)

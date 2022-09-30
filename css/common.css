@@ -24,11 +24,31 @@ button {
 }
 
 .gallery {
-  width: 100vw;
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 30px;
 
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto;
+  width: 100%;
+
+  flex-grow: 1;
+  gap: 30px;
+  
   list-style: none;
+  padding: 0;
 }
+@media screen and (min-width: 768px) {
+  .gallery {
+      width: 768px;}
+}
+@media screen and (min-width: 1200px) {
+  .gallery {
+    width: 1200px;
+  }
+}
+
+  
 
