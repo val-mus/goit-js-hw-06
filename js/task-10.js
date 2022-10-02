@@ -16,9 +16,10 @@ function onCreateBtnClickMasteringCollection(amount) {
   amount = refs.inputField.value;
   for (let i = 0; i < amount; i += 1) {
     const collectionElement = document.createElement("div");
-    collectionElement.setAttribute("width", `${30 + i * 10}px`);
-    collectionElement.setAttribute("hight", `${30 + i * 10}px`);
+    collectionElement.style.width = `${30 + i * 10}px`;
+    collectionElement.style.height = `${30 + i * 10}px`;
     collectionElement.style.backgroundColor = getRandomHexColor();
+
     refs.collection.append(collectionElement);
   }
 }
