@@ -10,6 +10,7 @@ const refs = {
 refs.widgetBtn.addEventListener("click", onClickChangeBgc);
 
 function onClickChangeBgc(event) {
-  refs.widgetText.textContent = getRandomHexColor();
-  document.body.style.backgroundColor = getRandomHexColor();
+  let generetedColor = getRandomHexColor();
+  refs.widgetText.textContent = generetedColor;
+  document.body.style.backgroundColor = generetedColor;
 }
